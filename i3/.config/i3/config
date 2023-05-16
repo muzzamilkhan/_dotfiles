@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font pango:JetBrainsMono Nerd Font Mono 14px
+font pango:JetBrainsMono Nerd Font Mono 24px
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -147,8 +147,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 
 # Lock
-bindsym $mod+Shift+period exec "i3lock -c 000000" 
+bindsym $mod+Ctrl+Shift+space exec "i3lock -c 000000" 
 
 # Screenshot 
 bindsym Print exec maim -s -u | xclip -selection clipboard -t image/png -i
+bindsym Shift+Print exec maim -s -u ~/Pictures/$(date +%s).png 
 

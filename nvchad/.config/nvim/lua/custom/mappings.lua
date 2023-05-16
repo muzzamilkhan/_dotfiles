@@ -23,7 +23,7 @@ M.general = {
 M.nvimtree = {
   n = {
     ["E"] = { "<cmd> NvimTreeFocus <CR>", "focus nvimtree" },
-    ["<leader>f"] = { "<cmd> Telescope find_files <CR>", "find files" },
+    ["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "toggle nvimtree" },
   },
 }
 

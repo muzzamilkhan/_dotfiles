@@ -1,5 +1,14 @@
 local plugins = {
   {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = {
+        side = "right",
+        width = 100,
+      },
+    }
+  },
+  {
     "neovim/nvim-lspconfig",
     config = function()
       require "plugins.configs.lspconfig"
@@ -20,6 +29,13 @@ local plugins = {
     },
   },
   { "f-person/git-blame.nvim", lazy = false },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    config = function()
+        require("null-ls").setup()
+    end,
+    requires = { "nvim-lua/plenary.nvim" },
+}
 }
 
 return plugins

@@ -1,5 +1,8 @@
 local plugins = {
   {
+    "vimwiki/vimwiki", lazy = false
+  },
+  {
     "nvim-tree/nvim-tree.lua",
     opts = {
       view = {

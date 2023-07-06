@@ -24,6 +24,11 @@ vim.cmd [[
     autocmd!
     autocmd VimResized * tabdo wincmd = 
   augroup end
+
+  augroup _format
+    autocmd!
+    autocmd BufWritePre * lua vim.lsp.buf.format()
+  augroup end
 ]]
 
 local function open_nvim_tree(data)

@@ -15,6 +15,7 @@ plugins=(
 	zsh-autosuggestions
 	z
   ssh-agent
+  zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh

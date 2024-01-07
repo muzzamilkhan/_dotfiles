@@ -25,6 +25,7 @@ source $ZSH/oh-my-zsh.sh
 bindkey -v
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export CHROMIUM_BIN="/usr/bin/google-chrome"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -45,3 +46,11 @@ alias grep="rg"
 alias ta="tmux attach"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+
+xset r rate 200 60
+
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}

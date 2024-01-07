@@ -1,10 +1,14 @@
 set $mod Mod4
 
-font pango:JetBrainsMono Nerd Font Mono 24px
+font pango:JetBrainsMono Nerd Font Mono 16px
 
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
+
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset r rate 200 60
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh 
 

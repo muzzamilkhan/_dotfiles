@@ -8,7 +8,7 @@ local plugins = {
 		opts = {
 			view = {
 				side = "right",
-				width = 80,
+				width = 50,
 			},
 		},
 	},

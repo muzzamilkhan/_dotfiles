@@ -16,8 +16,6 @@ M.disabled = {
 
 M.general = {
 	n = {
-		["L"] = { ":bnext<CR>" },
-		["H"] = { ":bprevious<CR>" },
 		["<leader>Q"] = { ':%bdelete|edit #|normal `"<CR>', "Close all other buffers" },
 	},
 }

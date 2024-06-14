@@ -1,3 +1,4 @@
 bin
 docker
 tmux/.config/tmux/plugins
+typecraft-nvim/.config/nvim/lazy-lock.json

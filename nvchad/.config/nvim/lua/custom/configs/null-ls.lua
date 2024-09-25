@@ -6,6 +6,7 @@ local lint = null_ls.builtins.diagnostics
 local sources = {
    formatting.prettier,
    formatting.stylua,
+   formatting.xmlformat,
 
    lint.shellcheck,
 }

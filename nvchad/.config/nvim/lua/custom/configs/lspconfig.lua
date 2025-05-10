@@ -3,7 +3,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require('lspconfig')
 local servers = {
-  "tsserver",
+  "ts_ls",
   "lua_ls",
   "html",
 }
